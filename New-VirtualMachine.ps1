@@ -1,9 +1,9 @@
+<#
 
+This script will create a 90GB vhdx file and attach it to the machine specified in the variable $VMName.
+You can specify whether the vhdx file is dynamic or fixed.
 
-
-#$VMHostConfiguration = $null
-#$VMHostConfiguration = @{}
-#https://social.technet.microsoft.com/wiki/contents/articles/34431.windows-10-enabling-vtpm-virtual-tpm.aspx
+#>
 
 
 $VHDXPath = (Get-VMHost).VirtualHardDiskPath
